@@ -6,11 +6,11 @@
     box-sizing: border-box;
 }
 :root{
-    /* --mainTextColor-light:#000;
+    --mainTextColor-light:#000;
     --secondaryTextColor-light:rgb(51 51 51);
     --mainLinkColor-light:#0da2b8;
     --mainBorderColor-light:rgb(218, 218, 218);
-    --mainBgColor-light:rgb(249, 250,251); */
+    --mainBgColor-light:rgb(249, 250,251);
 
     --mainTextColor-dark:#fff;
     --secondaryTextColor-dark:#adb0b1;
@@ -21,6 +21,7 @@
 li,a{
     text-decoration: none;
     list-style: none;
+    color: var(--mainTextColor-dark);
 }
 html{
     background-color: var(--mainBgColor-dark);
@@ -41,6 +42,7 @@ img {
 }
 .pro-img{
  text-align: center;
+ padding-top: 50px;
 }
 
 
@@ -74,6 +76,7 @@ img {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-top: 20px;
 }
 /* Skills & Qualifications
 ============================  */
@@ -117,7 +120,16 @@ padding: 10px 0px;
 .project .developer{
     padding: 15px 0px;
 }
-.project .developer:hover{
+.project .developer a:hover{
     color: var(--mainLinkColor-dark);
 }
 
+/* Management system
+================ */
+.system ul{
+  list-style: decimal;
+
+}
+#goback a,.live li{
+    color: var(--mainLinkColor-light);
+}
