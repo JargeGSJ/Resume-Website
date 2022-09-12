@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* --mainTextColor-light:#000;
+    --secondaryTextColor-light:rgb(51 51 51);
+    --mainLinkColor-light:#0da2b8;
+    --mainBorderColor-light:rgb(218, 218, 218);
+    --mainBgColor-light:rgb(249, 250,251); */
+
+    --mainTextColor-dark:#fff;
+    --secondaryTextColor-dark:#adb0b1;
+    --mainLinkColor-dark:rgb(30, 190,214);
+    --mainBorderColor-dark:#2b3031;
+    --mainBgColor-dark:#131415;
+}
+li,a{
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    background-color: var(--mainBgColor-dark);
+    color: var(--mainTextColor-dark);
+}
+main{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    line-height: 1.5;
+}
+
+img {
+    border-radius: 60%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;  
+}
+.pro-img{
+ text-align: center;
+}
+
+
+
+@media (min-width:768px) {
+    .profile{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+  
+}
+.profile a{
+    color: var(--mainLinkColor-dark);
+}
+.pro-detail h1{
+    font-size: 50px;
+    padding-bottom: 2rem;
+}
+.profile-email{
+    padding-top: 1rem;
+}
+/* ====== socials-link
+=========================== */
+#socials-link a{
+    display: block;
+    text-decoration: none;
+    color: var(--secondaryTextColor-dark);
+}
+#socials-link{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* Skills & Qualifications
+============================  */
+h1{
+    padding: 30px 0px;
+}
+ul{
+padding-left: 50px;
+}
+/* Tech stack
+========================== */
+.tech-stack{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.stack{
+    border: 1px solid var(--mainBorderColor-dark);
+    padding: 10px 20px;
+    margin: 5px;
+}
+/* Work History
+============================== */
+.developer{
+    border-top:1px solid var(--mainBorderColor-dark);
+    border-bottom:1px solid var(--mainBorderColor-dark);
+    padding: 50px 0px ;
+}
+.dev-persent ul li{
+    list-style: disc;
+}
+.dev-persent p{
+padding: 10px 0px;
+}
+.dev-persent{
+    border-left:1px solid var(--mainBorderColor-dark);
+    padding-left: 50px;
+}
+/* ===project& accomplishments
+===================================== */
+.project .developer{
+    padding: 15px 0px;
+}
+.project .developer:hover{
+    color: var(--mainLinkColor-dark);
+}
+
